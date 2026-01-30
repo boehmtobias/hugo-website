@@ -1,19 +1,19 @@
 ---
-title: "Course Title (less than 70 characters)" 
+title: "Resource Title (less than 70 characters)" 
 date: 2006-03-15
-url: /course/
+url: /resource/
 aliases:
     - /old_url.html
 tags: ["keyword 1","keyword 2","keyword 3","keyword 4","keyword 5","keyword 6","keyword 7","keyword 8"]
-author: ["Course Author 1", "Course Author 2"]
-description: "Course description for search engines (less than 155 characters)" 
-summary: "Course summary for list page (less than 265 characters)
+author: ["Resource Author 1", "Resource Author 2"]
+description: "Resource description for search engines (less than 155 characters)" 
+summary: "Resource summary for list page (less than 265 characters)
 cover:
-    image: "course_figure.png"
+    image: "resource_figure.png"
     alt: "Figure title (preferably 1280x720 pixels)"
     relative: true
 editPost:
-    URL: "https://youtube.com/course_playlist"
+    URL: "https://youtube.com/resource_playlist"
     Text: "YouTube playlist"
 disableAnchoredHeadings: false
 showToc: true

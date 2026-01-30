@@ -5,21 +5,23 @@ theme: PaperMod
 enableInlineShortcodes: true
 enableRobotsTXT: true
 pagination:
-  pagerSize: 20
+  pagerSize: 10
 
 taxonomies:
     tag: tags
 
 menu:
     main:
+        - name: Contact
+          url: contact/
         - name: Papers
           url: papers/
           weight: 2
         - name: Resources
           url: resources/
           weight: 3
-        - name: ORCID
-          url: https://orcid.org/0009-0003-5409-9384
+        - name: Work Profile
+          url: https://www.hochschule-trier.de/hauptcampus/wirtschaft/fachbereich/personen-wir/mitarbeiterinnen-und-mitarbeiter/tobias-boehm
           weight: 6
 
 params:
@@ -27,7 +29,7 @@ params:
     author: Tobias Böhm
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
-    defaultTheme: light
+    defaultTheme: dark
     hideFooter: false
     disableThemeToggle: false
     ShowShareButtons: false
@@ -38,8 +40,8 @@ params:
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["papers","resources"]
-    ShowToc: true
+    MainSections: ["contact","papers","resources"]
+    ShowToc: false
     disableScrollToTop: false
     TocOpen: true
     ShowWordCount: true
@@ -55,10 +57,14 @@ params:
           imageWidth: 200
           imageHeight: 200
           buttons:
+            - name: Contact
+              url: contact/
             - name: Papers
               url: papers/
             - name: Resources
               url: resources/
+            - name: Work Profile
+              url: https://www.hochschule-trier.de/hauptcampus/wirtschaft/fachbereich/personen-wir/mitarbeiterinnen-und-mitarbeiter/tobias-boehm
             - name: Tags
               url: tags/
             - name: Archive
@@ -68,23 +74,25 @@ params:
         # - name: CV
         #   url: cv_en.pdf
         - name: Email
-          url: mailto:mail@boehmt.de
+          url: mailto:boehmt@hochschule-trier.de
         - name: LinkedIn
           url: https://www.linkedin.com/in/boehmt/
-        - name: ResearchGate
-          url: https://www.researchgate.net/profile/Tobias-Boehm-8?ev=hdr_xprf
         - name: GitHub
           url: https://github.com/boehmtobias
+        - name: ResearchGate
+          url: https://www.researchgate.net/profile/Tobias-Boehm-8
         - name: ORCID
           url: https://orcid.org/0009-0003-5409-9384
         - name: Location
-          url: location/
+          url: contact/#office-location
+        - name: Contact
+          url: contact/
 
     assets:
         disableScrollBarStyle: true
     cover:
         hiddenInList: false
-        hiddenInSingle: true
+        hiddenInSingle: false
     label:
       text: "Tobias Böhm"
       icon: favicon.ico
