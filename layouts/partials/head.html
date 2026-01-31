@@ -1,6 +1,21 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script>
+    (function () {
+        const t = localStorage.getItem("pref-theme");
+        const html = document.documentElement;
+
+        if (t === "dark") {
+            html.classList.add("dark");
+        } else if (t === "light") {
+            html.classList.remove("dark");
+        } else if (window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            html.classList.add("dark");
+        }
+    })();
+</script>
 {{- if hugo.IsProduction | and (ne .Params.robotsNoIndex true) }}
 <meta name="robots" content="index, follow">
 {{- else }}

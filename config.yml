@@ -4,14 +4,85 @@ theme: PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: false
+enableEmoji: true
 pagination:
   pagerSize: 10
 
-taxonomies:
-    tag: tags
 
-menu:
-    main:
+
+defaultContentLanguage: de
+languages:
+  de:
+    contentDir: content/de
+    languageName: "Deutsch :de:"
+    weight: 1
+    taxonomies:
+      tag: tags
+    menu:
+      main:
+        - name: Kontakt
+          url: kontakt/
+        - name: Publikationen
+          url: publikationen/
+          weight: 2
+        - name: Ressourcen
+          url: ressourcen/
+          weight: 3
+        - name: Arbeitsprofil
+          url: https://www.hochschule-trier.de/hauptcampus/wirtschaft/fachbereich/personen-wir/mitarbeiterinnen-und-mitarbeiter/tobias-boehm
+          weight: 6
+    params:
+      description: "Diese Website enthält die Forschungspublikationen, Lehrmaterialien, den Lebenslauf sowie die Kontaktinformationen von Tobias Böhm."
+      DateFormat: "January 2006"
+      MainSections: [ "kontakt","publikationen","ressourcen" ]
+      profileMode:
+        enabled: true
+        title: Tobias Böhm
+        subtitle: "Ich bin Doktorand an der Hochschule Trier (Fachbereich Wirtschaft) in Deutschland. Meine Forschungsschwerpunkte liegen derzeit in den 
+            Bereichen Sustainable Software Engineering, modellgetriebene Softwaremodernisierung, und effiziente Algorithmen."
+        imageUrl: "profile.jpg"
+        imageWidth: 200
+        imageHeight: 200
+        buttons:
+          - name: Kontakt
+            url: kontakt/
+          - name: Publikationen
+            url: publikationen/
+          - name: Ressourcen
+            url: ressourcen/
+          - name: Arbeitsprofil
+            url: https://www.hochschule-trier.de/hauptcampus/wirtschaft/fachbereich/personen-wir/mitarbeiterinnen-und-mitarbeiter/tobias-boehm
+          - name: Tags
+            url: tags/
+          - name: Archiv
+            url: archiv/
+
+      socialIcons:
+        # - name: CV
+        #   url: cv_en.pdf
+        - name: Email
+          url: mailto:boehmt@hochschule-trier.de
+        - name: LinkedIn
+          url: https://www.linkedin.com/in/boehmt/
+        - name: GitHub
+          url: https://github.com/boehmtobias
+        - name: ResearchGate
+          url: https://www.researchgate.net/profile/Tobias-Boehm-8
+        - name: ORCID
+          url: https://orcid.org/0009-0003-5409-9384
+        - name: Standort
+          url: kontakt/#bürostandort
+        - name: Kontakt
+          url: kontakt/
+
+  en:
+    contentDir: content/en
+    languageName: "English :gb:"
+    weight: 3
+    taxonomies:
+      tag: tags
+    menu:
+      main:
         - name: Contact
           url: contact/
         - name: Papers
@@ -23,54 +94,33 @@ menu:
         - name: Work Profile
           url: https://www.hochschule-trier.de/hauptcampus/wirtschaft/fachbereich/personen-wir/mitarbeiterinnen-und-mitarbeiter/tobias-boehm
           weight: 6
+    params:
+      description: "This website hosts Tobias Böhm's research papers, lesson materials, curriculum vitae, and contact information."
+      DateFormat: "January 2006"
+      MainSections: ["contact","papers","resources"]
+      profileMode:
+        enabled: true
+        title: Tobias Böhm
+        subtitle: "I am a PhD student at [Trier University of Applied Sciences](https://www.hochschule-trier.de/en/main-campus/wirtschaft) (Bussiness School) in
+              Germany. My research is currently focused on Sustainable Software Engineering, Model-Driven Software Modernization, and Efficient Algorithms."
+        imageUrl: "profile.jpg"
+        imageWidth: 200
+        imageHeight: 200
+        buttons:
+          - name: Contact
+            url: contact/
+          - name: Papers
+            url: papers/
+          - name: Resources
+            url: resources/
+          - name: Work Profile
+            url: https://www.hochschule-trier.de/hauptcampus/wirtschaft/fachbereich/personen-wir/mitarbeiterinnen-und-mitarbeiter/tobias-boehm
+          - name: Tags
+            url: tags/
+          - name: Archive
+            url: archive/
 
-params:
-    description: "This website hosts Tobias Böhm's research papers, lesson materials, curriculum vitae, and contact information."
-    author: Tobias Böhm
-    # googleAnalyticsID: "G-XXXXX"
-    DateFormat: "January 2006"
-    defaultTheme: dark
-    hideFooter: true
-    disableThemeToggle: false
-    ShowShareButtons: false
-    ShowReadingTime: true
-    disableSpecial1stPost: true
-    disableAnchoredHeadings: true
-    ShowPostNavLinks: false
-    ShowBreadCrumbs: true
-    ShowCodeCopyButtons: true
-    ShowAllPagesInArchive: false
-    MainSections: ["contact","papers","resources"]
-    ShowToc: false
-    disableScrollToTop: false
-    TocOpen: true
-    ShowWordCount: true
-    UseHugoToc: true
-    comments: false
-    math: true
-    profileMode:
-          enabled: true
-          title: Tobias Böhm
-          subtitle: "I am a PhD student at [Trier University of Applied Sciences](https://www.hochschule-trier.de/en/main-campus/wirtschaft) (Bussiness School) in
-            Germany. My research is currently focused on Sustainable Software Engineering, Model-Driven Software Modernization, and Efficient Algorithms."
-          imageUrl: "profile.jpg"
-          imageWidth: 200
-          imageHeight: 200
-          buttons:
-            - name: Contact
-              url: contact/
-            - name: Papers
-              url: papers/
-            - name: Resources
-              url: resources/
-            - name: Work Profile
-              url: https://www.hochschule-trier.de/hauptcampus/wirtschaft/fachbereich/personen-wir/mitarbeiterinnen-und-mitarbeiter/tobias-boehm
-            - name: Tags
-              url: tags/
-            - name: Archive
-              url: archive/
-
-    socialIcons:
+      socialIcons:
         # - name: CV
         #   url: cv_en.pdf
         - name: Email
@@ -87,6 +137,31 @@ params:
           url: contact/#office-location
         - name: Contact
           url: contact/
+
+
+
+params:
+    author: Tobias Böhm
+    # googleAnalyticsID: "G-XXXXX"
+    defaultTheme: light
+    hideFooter: true
+    disableThemeToggle: false
+    ShowShareButtons: false
+    ShowReadingTime: true
+    disableSpecial1stPost: true
+    disableAnchoredHeadings: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowAllPagesInArchive: false
+    ShowToc: false
+    disableScrollToTop: false
+    TocOpen: true
+    ShowWordCount: true
+    UseHugoToc: true
+    comments: false
+    math: true
+    displayFullLangName: true
 
     assets:
         disableScrollBarStyle: true

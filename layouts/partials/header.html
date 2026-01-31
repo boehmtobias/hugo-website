@@ -98,27 +98,30 @@
                 </button>
                 {{- end }}
 
+                {{- $p := . -}}
                 {{- $lang := .Lang}}
                 {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
-                {{- with site.Home.Translations }}
+                {{- if gt (len site.Languages) 1 -}}
                 <ul class="lang-switch">
                     {{- if $separator }}<li>|</li>{{ end }}
-                    {{- range . -}}
-                    {{- if ne $lang .Lang }}
+                    {{- range site.Languages -}}
+                    {{- if ne $lang .Lang -}}
+                    {{- $t := (index (where $p.AllTranslations "Lang" .Lang) 0) -}}
                     <li>
-                        <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
-                            aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
-                            {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
-                            {{- .Language.LanguageName | emojify -}}
-                            {{- else }}
+                        <a href="{{- if $t -}}{{ $t.RelPermalink }}{{- else -}}{{ site.Home.RelPermalink | relLangURL }}{{- end -}}"
+                           title="{{ .Params.languageAltTitle | default (.LanguageName | emojify) | default (.Lang | title) }}"
+                           aria-label="{{ .LanguageName | default (.Lang | title) }}">
+                            {{- if (and site.Params.displayFullLangName .LanguageName) -}}
+                            {{- .LanguageName | emojify -}}
+                            {{- else -}}
                             {{- .Lang | title -}}
                             {{- end -}}
                         </a>
                     </li>
                     {{- end -}}
-                    {{- end}}
+                    {{- end -}}
                 </ul>
-                {{- end }}
+                {{- end -}}
             </div>
         </div>
         {{- $currentPage := . }}
