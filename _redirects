@@ -1,0 +1,3 @@
+https://boehmt.netlify.app/* https://boehmt.de/:splat 301!
+www.boehmt.de/* https://boehmt.de/:splat 301!
+https://www.boehmt.de/* https://boehmt.de/:splat 301!

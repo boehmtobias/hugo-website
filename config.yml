@@ -3,7 +3,7 @@ title: Tobias Böhm
 theme: PaperMod
 
 enableInlineShortcodes: true
-enableRobotsTXT: true
+enableRobotsTXT: false
 pagination:
   pagerSize: 10
 
