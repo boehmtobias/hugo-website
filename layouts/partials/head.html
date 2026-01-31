@@ -5,17 +5,19 @@
     (function () {
         const t = localStorage.getItem("pref-theme");
         const html = document.documentElement;
+        const body = document.body;
 
-        if (t === "dark") {
-            html.classList.add("dark");
-        } else if (t === "light") {
-            html.classList.remove("dark");
-        } else if (window.matchMedia &&
-            window.matchMedia("(prefers-color-scheme: dark)").matches) {
-            html.classList.add("dark");
+        function setDark(on) {
+            html.classList.toggle("dark", on);
+            if (body) body.classList.toggle("dark", on);
         }
+
+        if (t === "dark") setDark(true);
+        else if (t === "light") setDark(false);
+        else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) setDark(true);
     })();
 </script>
+
 {{- if hugo.IsProduction | and (ne .Params.robotsNoIndex true) }}
 <meta name="robots" content="index, follow">
 {{- else }}
