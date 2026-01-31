@@ -30,7 +30,7 @@ params:
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
     defaultTheme: dark
-    hideFooter: false
+    hideFooter: true
     disableThemeToggle: false
     ShowShareButtons: false
     ShowReadingTime: true
