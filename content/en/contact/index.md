@@ -1,5 +1,6 @@
 ---
 title: "Contact & Availability"
+translationKey: contact
 date: 2026-01-30
 hidemeta: true
 description: "Contact details, availability, and meeting guidelines for Tobias Böhm."
@@ -29,7 +30,7 @@ In-person meetings at my office are also possible by prior arrangement.
 
 #### Meeting Requests & Preparation
 
-Please send meeting requests **via email** to [boehmt@hochschule-trier.de](mailto:boehmt@hochschule-trier.de)
+Please send meeting requests **via email** to: [boehmt@hochschule-trier.de](mailto:boehmt@hochschule-trier.de)
 
 Requests should include:
   + the **topic and goal** of the meeting,
@@ -47,7 +48,7 @@ Requests that do not meet these criteria may not receive a response.
 
 #### Mailing address
 
-Tobias Böhm
+Tobias Böhm  
 Fachbereich Wirtschaft  
 Hochschule Trier  
 Schneidershof  
@@ -63,5 +64,4 @@ Room 5
 Business School, Main Campus  
 Trier University of Applied Sciences
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.8184150640304!2d6.6326529999999995!3d49.77067259999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47957cbf62945a49%3A0xc5683715504c26c5!2sHochschule%20Trier%20%E2%80%93%20Trier%20University%20of%20Applied%20Sciences!5e0!3m2!1sde!2sde!4v1769810385283!5m2!1sde!2sde"
-width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<iframe width="700" height="300" src="https://www.openstreetmap.org/export/embed.html?bbox=6.627835035324097%2C49.764998578771056%2C6.6314828395843515%2C49.76912176201278&amp;layer=mapnik&amp;marker=49.76706021423045%2C6.629658937454224" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=49.767060&amp;mlon=6.629659#map=18/49.767060/6.629659">Open larger map</a></small>
