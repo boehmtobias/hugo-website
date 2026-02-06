@@ -21,12 +21,12 @@ languages:
     menu:
       main:
         - name: Kontakt
-          url: kontakt/
+          url: contact/
         - name: Publikationen
-          url: publikationen/
+          url: papers/
           weight: 2
         - name: Ressourcen
-          url: ressourcen/
+          url: resources/
           weight: 3
         - name: Arbeitsprofil
           url: https://www.hochschule-trier.de/hauptcampus/wirtschaft/fachbereich/personen-wir/mitarbeiterinnen-und-mitarbeiter/tobias-boehm
@@ -45,17 +45,17 @@ languages:
         imageHeight: 200
         buttons:
           - name: Kontakt
-            url: kontakt/
+            url: contact/
           - name: Publikationen
-            url: publikationen/
+            url: papers/
           - name: Ressourcen
-            url: ressourcen/
+            url: resources/
           - name: Arbeitsprofil
             url: https://www.hochschule-trier.de/hauptcampus/wirtschaft/fachbereich/personen-wir/mitarbeiterinnen-und-mitarbeiter/tobias-boehm
           - name: Tags
             url: tags/
           - name: Archiv
-            url: archiv/
+            url: archive/
 
       socialIcons:
         # - name: CV
@@ -73,7 +73,7 @@ languages:
         - name: Standort
           url: kontakt/#bürostandort
         - name: Kontakt
-          url: kontakt/
+          url: contact/
 
   en:
     contentDir: content/en

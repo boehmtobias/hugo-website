@@ -1,0 +1,9 @@
+body.dark .highlight {
+    background: transparent !important;
+}
+
+body.dark .highlight pre,
+body.dark .chroma {
+    border-radius: var(--radius);
+    overflow: hidden;
+}
