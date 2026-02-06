@@ -34,7 +34,7 @@ languages:
     params:
       description: "Diese Website enthält die Forschungspublikationen, Lehrmaterialien, den Lebenslauf sowie die Kontaktinformationen von Tobias Böhm."
       DateFormat: "January 2006"
-      MainSections: [ "kontakt","publikationen","ressourcen" ]
+      MainSections: [ "contact", "papers", "resources" ]
       profileMode:
         enabled: true
         title: Tobias Böhm
@@ -55,7 +55,7 @@ languages:
           - name: Tags
             url: tags/
           - name: Archiv
-            url: archive/
+            url: archives/
 
       socialIcons:
         # - name: CV
@@ -97,7 +97,7 @@ languages:
     params:
       description: "This website hosts Tobias Böhm's research papers, lesson materials, curriculum vitae, and contact information."
       DateFormat: "January 2006"
-      MainSections: ["contact","papers","resources"]
+      MainSections: [ "contact", "papers", "resources" ]
       profileMode:
         enabled: true
         title: Tobias Böhm
@@ -118,7 +118,7 @@ languages:
           - name: Tags
             url: tags/
           - name: Archive
-            url: archive/
+            url: archives/
 
       socialIcons:
         # - name: CV
